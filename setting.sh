@@ -67,7 +67,7 @@ update_system_packages() {
 
 # 更新自己
 update_scripts(){
-    wget -O pi.sh ${proxy}https://raw.githubusercontent.com/YungRui0402/Shell/main/setting.sh && chmod +x setting.sh
+    wget -O setting.sh ${proxy}https://raw.githubusercontent.com/YungRui0402/Shell/main/setting.sh && chmod +x setting.sh
 	echo "腳本已更新並保存在當前目錄 setting.sh,現在將執行新腳本。"
 	./setting.sh ${proxy}
 	exit 0
